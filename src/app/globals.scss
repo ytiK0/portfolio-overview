@@ -1,0 +1,22 @@
+$color-primary: #0da4dd;
+$color-secondary: #ff6a05;
+$background: #ffffff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-open-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  $background: rgb(34,29,34);
+
+  html {
+    color-scheme: dark;
+  }
+}
