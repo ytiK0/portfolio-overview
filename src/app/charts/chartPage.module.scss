@@ -1,0 +1,23 @@
+@use "src/app/theme";
+
+.selectionSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  cursor: pointer;
+  transition: color .2s;
+}
+
+.label:has(input:checked) {
+  color: theme.$color-secondary;
+}
+
+.label:hover {
+  color: theme.$color-primary;
+}
+
+.label input {
+  display: none;
+}

@@ -1,0 +1,42 @@
+@use "src/app/theme";
+
+.table {
+  min-width: 600px;
+}
+
+.noDataTable {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-size: 48px;
+}
+
+.tableHead {
+
+}
+
+.tableRow {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cell {
+  flex: 1 1;
+  transition: background-color;
+}
+
+.assetTableRow {
+  transition: background-color ease-in-out .1s;
+  cursor: pointer;
+}
+
+.assetTableRow:hover {
+  background-color: theme.$background-hover;
+}
+
+.tableBody {
+  height: 50vh;
+  overflow-y: scroll;
+}

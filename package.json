@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-virtualized-auto-sizer": "^1.0.26",
+    "react-window": "^1.8.11",
+    "recharts": "^2.15.2",
     "sass": "^1.86.3"
   },
   "devDependencies": {
@@ -19,6 +23,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-window": "^1.8.8",
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
     "typescript": "^5"

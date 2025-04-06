@@ -1,0 +1,26 @@
+@use "src/app/theme";
+
+.listWrapper {
+  margin: 10px 0;
+  width: 100%;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.listItem:hover {
+  background-color: theme.$background-hover;
+}
+
+.listItem span {
+  display: inline-block;
+  flex: 1 1;
+}

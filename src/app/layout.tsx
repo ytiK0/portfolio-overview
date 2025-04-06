@@ -19,7 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${geistSans.variable}`}>
+      <body className={`${geistSans.variable} page`}>
+
         {children}
       </body>
     </html>

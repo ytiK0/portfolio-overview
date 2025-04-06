@@ -1,22 +1,37 @@
-$color-primary: #0da4dd;
-$color-secondary: #ff6a05;
-$background: #ffffff;
+@use "theme";
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  border: none;
 }
 
 body {
   font-family: var(--font-open-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  $background: rgb(34,29,34);
+.page {
+  margin: 10px 20px 0;
+}
 
-  html {
-    color-scheme: dark;
+.loader {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 5px solid theme.$color-primary;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
